@@ -7,5 +7,6 @@ public class Hello {
 		System.out.println("Hello, Java");
 		System.out.println("Hello, 대한민국");
 		System.out.println("Hello, NCP08");
+		System.out.println("Hello, NCP08");
 	}
 }
