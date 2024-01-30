@@ -35,6 +35,8 @@ public class SwitchEx {
 			break;
 		}
 		
+		sc.close();
+		
 
 	}
 
