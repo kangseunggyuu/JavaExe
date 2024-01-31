@@ -3,7 +3,7 @@ package ch08.class08;
 public class FruitSeller {
 	private int numOfApple;			// 사과개수
 	private int saleMoney;			// 판매금액
-	final int APPLE_PRICE = 1000;	// 사과가격(상수)
+	final int APPLE_PRICE = 1000;	// 사과가격(상수(상수는 웬만해선 대문자))
 	
 	public FruitSeller(int numOfApple) {
 		this.numOfApple = numOfApple;
