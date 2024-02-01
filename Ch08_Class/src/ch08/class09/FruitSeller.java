@@ -1,17 +1,17 @@
-package ch08.class08;
+package ch08.class09;
 
 public class FruitSeller {
 	private int numOfApple;			// 사과개수
 	private int saleMoney;			// 판매금액
-	final int APPLE_PRICE = 1000;	// 사과가격(상수(상수는 웬만해선 대문자))
+	final int APPLE_PRICE = 1000;	// 사과가격
 	
 	public FruitSeller(int numOfApple) {
 		this.numOfApple = numOfApple;
 	}
-	public int saleApple(int money) {
-		int num = money/APPLE_PRICE;
-		numOfApple = numOfApple - num;
-		saleMoney = saleMoney + money;
+	public int saleApple(FruitBuyer buyer, int money) {
+		int num = buyer.buyApple(money);
+		numOfApple -= num;
+		saleMoney +=  money;
 		return num;
 	}
 	public void showSaleResult() {

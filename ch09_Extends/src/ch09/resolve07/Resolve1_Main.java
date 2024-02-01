@@ -9,6 +9,6 @@ package ch09.resolve07;
 //void setValue(int _a, int _b) : 연산값을 전달받아 필드에 저장
 //int calculate() : 해당 클래스의 목적에 맞는 연산을 실행하고 결과를 리턴합니다
 
-public class Resolve1 {
+public class Resolve1_Main {
 
 }
