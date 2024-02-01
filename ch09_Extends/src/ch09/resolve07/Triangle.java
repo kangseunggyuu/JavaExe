@@ -6,6 +6,27 @@ package ch09.resolve07;
 //삼각형의 넓이를 계산해서 반환하는 메소드도 정의합니다
 //객체를 만들어서 사용해보세요
 
-public class Resolve2 {
-
+public class Triangle {
+	int base;
+	int height;
+	
+	public Triangle(int base, int height) {
+		this.base = base;
+		this.height = height;
+	}
+	public int area() {
+		return base * height/2;
+	}
+	public int getBase() {
+		return base;
+	}
+	public void setBase(int base) {
+		this.base = base;
+	}
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
 }

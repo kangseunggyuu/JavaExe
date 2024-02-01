@@ -13,12 +13,30 @@ public class Rectangle {
 		this.y2 = y2;
 	}
 	
-	public int squre() {
-		return;
+	public int square() {
+		int base = Math.abs(x1 - x2);
+		int height = Math.abs(y1 - y2);
+		
+		return base*height;
 	}
-	
 	public void show() {
-		System.out.println("좌표: ");
-		System.out.println("넓이: ");
+		int leftX = x1 < x2 ? x1 : x2;
+		int topY = y1 < y2 ? y1 : y2;
+		int rightX = x1 > x2 ? x1 : x2;
+		int bottomY = y1 > y2 ? y1 : y2;
+		System.out.println("좌상단 x1 = " + leftX);
+		System.out.println("좌상단 y1 = " + topY);
+		System.out.println("우하단 x2 = " + rightX);		
+		System.out.println("우하단 y2 = " + bottomY);
+		System.out.println("넓이 = " + square());
+	}
+	public boolean equals(Rectangle r) {
+		if(this.x1 == r.x1 &&
+		   this.y1 == r.y1 &&
+		   this.x2 == r.x2 &&
+		   this.y2 == r.y2)
+			return true;
+		
+		return false;
 	}
 }
