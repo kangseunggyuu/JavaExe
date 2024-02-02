@@ -1,5 +1,12 @@
 package ch09.interface13;
 
+import java.util.Arrays;
+
+import ch09.interface13.factory01.FordCar;
+import ch09.interface13.factory01.HyundaiCar;
+import ch09.interface13.factory01.ToyotaCar;
+import ch09.interface13.order01.CarTester;
+
 /*
 [시나리오]
 1. Bitcamp는 자동차 산업을 진출하기 위해 자동를 OEM 생산주문 하기로 결정했다.
@@ -24,9 +31,43 @@ package ch09.interface13;
 */
 public class CarMain {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) throws InterruptedException {
+		CarTester carTester = new CarTester();
+		ICar[] carArr = new ICar[] {
+				new HyundaiCar(),
+				new ToyotaCar(),
+				new FordCar()
+		};
+		int[] score = new int[carArr.length];
+		
+		for(int i=0;i<carArr.length;i++) {
+			carTester.setCar(carArr[i]);
+			
+			score[i] += carTester.onOffTest();
+			System.out.printf("OnOff 테스트 점수는 %d입니다", score[i]);
+			score[i] += carTester.speedTest();
+			System.out.printf("Speed 테스트 점수는 %d입니다", score[i]);
+			score[i] += carTester.footBreakTest();
+			System.out.printf("Break 테스트 점수는 %d입니다", score[i]);
+			score[i] += carTester.driveTest();
+			
+			System.out.printf("전체 테스트 점수는 %d입니다", score[i]);
+			System.out.println("---------------------------------------");
+		}
+		
+		// 가장 큰 점수를 받은 값과 인덱스 찾기
+		int max = score[0];
+		int maxIdx = 0;
+		for(int i=1;i<score.length;i++) {
+			if(max < score[i]) {
+				max = score[i];
+				maxIdx = i;
+			}
+		}
+		
+		System.out.printf("가장 높은 점수를 받은 차는 %d번째 차이고 점수는 %d입니다\n",
+				maxIdx+1, max);
+		System.out.println(carArr[maxIdx].getClass().getName());
 	}
 
 }
