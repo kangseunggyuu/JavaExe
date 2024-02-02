@@ -11,6 +11,6 @@ public class Hello {
 		}
 		
 		System.out.println("연동 확인중입니다.");
-		
+		System.out.println("연동 재확인.");
 	}
 }
