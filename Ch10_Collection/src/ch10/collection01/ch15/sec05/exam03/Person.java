@@ -9,10 +9,15 @@ public class Person implements Comparable<Person> {
 		this.age = age;
 	}
 	
-	@Override
+//	@Override
+//	public int compareTo(Person o) {
+//		if(age<o.age) return -1;
+//		else if(age == o.age) return 0;
+//		else return 1;
+//	}
 	public int compareTo(Person o) {
-		if(age<o.age) return -1;
-		else if(age == o.age) return 0;
-		else return 1;
+		return name.compareTo(o.name);		//이름순으로 정렬
+//		return name.compareTo(o.name)*-1;	//역정렬
+
 	}
 }

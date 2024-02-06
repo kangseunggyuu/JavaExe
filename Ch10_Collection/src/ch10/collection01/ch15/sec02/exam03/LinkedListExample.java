@@ -1,4 +1,4 @@
-package ch10.collection01.ch15.sec02.exam01;
+package ch10.collection01.ch15.sec02.exam03;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

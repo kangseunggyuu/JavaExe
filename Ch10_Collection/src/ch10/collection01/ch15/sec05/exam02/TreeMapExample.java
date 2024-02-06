@@ -34,7 +34,7 @@ public class TreeMapExample {
 		entry = treeMap.lastEntry();
 		System.out.println("제일 뒤 단어: " + entry.getKey() + "-" + entry.getValue());
 		entry = treeMap.lowerEntry("ever");
-		System.out.println("제일 앞 단어: " + entry.getKey() + "-" + entry.getValue() + "\n");
+		System.out.println("ever 앞 단어: " + entry.getKey() + "-" + entry.getValue() + "\n");
 		
 		//내림차순으로 정렬하기
 		NavigableMap<String, Integer> descendingMap = treeMap.descendingMap();

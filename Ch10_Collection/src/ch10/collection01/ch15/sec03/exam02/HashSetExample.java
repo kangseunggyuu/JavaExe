@@ -8,6 +8,12 @@ public class HashSetExample {
 		//HashSet 컬랙션 생성
 		Set<Member> set = new HashSet<Member>();
 		
+//		Member mem0 = new Member("홍길동", 30);
+//		Member mem1 = new Member("홍길동", 30);
+//		
+//		set.add(mem0);
+//		set.add(mem1);
+		
 		//Member 객체 저장
 		set.add(new Member("홍길동", 30));
 		set.add(new Member("홍길동", 30));
