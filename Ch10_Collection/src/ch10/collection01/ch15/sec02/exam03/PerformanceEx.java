@@ -20,7 +20,7 @@ public class PerformanceEx {
 			System.out.println("sum=" + sum);
 			cnt++; 
 		}
-		System.out.println("트리 최대 32 검색할 수 있는 최대 수는" +sum + "입니다.");
+		System.out.println("트리 최대 32 검색할 수 있는 최대 수는" + sum + "입니다.");
 	}
 
 }

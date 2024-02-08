@@ -1,4 +1,4 @@
-package ch01.string01;
+package ch11.string01;
 
 public class StringCompare {
 	public static void main(String[] args) {
