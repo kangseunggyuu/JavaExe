@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 public class Restaurant {
 	// 필드
-	public String name;
 	public Scanner sc;
-	private String[] foods = {"냉면", "떡볶이", "쌀국수",
-							"칼국수", "순대", "튀김", "라면"};
+	public String name;
+	private String[] foods = {"냉면", "떡볶이", "쌀국수", "칼국수", "순대", "튀김", "라면"};
 	private int selectNum;	
 	
 	// 메서드

@@ -5,12 +5,15 @@ public class Car {
 	private Tire tire1 = new Tire();
 	
 	// 필드에 익명 자식 객체 대입
+	// Tire에 상속을 받은 내부적인 클래스
 	private Tire tire2 = new Tire() {
+		// 다양성을 위해 roll을 재정의
 		@Override
 		public void roll() {
 			System.out.println("익명 자식 Tire 객체 1이 굴러갑니다.");
 		}
 	};
+	
 	
 	// 메소드(필드 이용)
 	public void run1() {
@@ -24,7 +27,7 @@ public class Car {
 		Tire tire = new Tire() {
 			@Override
 			public void roll() {
-				System.out.println("익명의 자식 Tire 객체 2가 굴러갑니다.");
+				System.out.println("익명 자식 Tire 객체 2가 굴러갑니다.");
 			}
 		};
 		tire.roll();

@@ -4,7 +4,7 @@ public class MethodEx3 {
 	// num0과 num1은 add함수의 지역변수이다.
 	public static int add(int num0, int num1) {
 		int result = num0 + num1;
-		return result;
+		return result; // main메서드 result로 리턴
 	}
 	
 	public static void main(String[] args) {

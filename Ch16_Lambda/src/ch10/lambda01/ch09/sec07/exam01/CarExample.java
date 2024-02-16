@@ -12,6 +12,7 @@ public class CarExample {
 		car.run2();
 		
 		// 익명 자식 객체가 대입된 매개변수 사용
+		// Tire 클래스의 상속을 받은 자식 객체
 		car.run3(new Tire() {
 			@Override
 			public void roll() {

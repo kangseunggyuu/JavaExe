@@ -14,7 +14,7 @@ public class LambdaExample {
 		//person.action((x,y) -> {
 		//return (x + y);
 		//});
-		person.action((x, y) -> (x + y));
+		person.action((x, y) -> (x + y));	// 이것도 return
 		
 		//리턴문이 하나만 있을 경우(메소드 호출)
 		//person.action((x, y) -> {

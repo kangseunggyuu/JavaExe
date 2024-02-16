@@ -16,8 +16,9 @@ import java.util.Scanner;
  * */
 public class Restaurant {
 	// 필드
-	private String[] foods = {"냉면", "떡볶이", "쌀국수",
-							"칼국수", "순대", "튀김", "라면"};
+	private String[] foods = {"냉면", "떡볶이", "쌀국수", "칼국수", "순대", "튀김", "라면"};
+	// 배열 안에 값을 설정해줄려면 {}를 쓰면 된다...
+	
 	private int selectNum;
 	private Scanner sc = new Scanner(System.in);
 	
@@ -32,8 +33,8 @@ public class Restaurant {
 		selectNum = sc.nextInt();
 	}
 	public void deliveryFood() {
-		String food = foods[selectNum];
-		System.out.println(food + "이 나왔습니다.");
+		String food = foods[selectNum];	//foods[selectNum]은 배열 안 해당 값이 food가 된다.
+		System.out.println(food + " 나왔습니다.");
 		System.out.println("맛있게 드세요 ^^");
 	}
 	public void keyboardEnd() {

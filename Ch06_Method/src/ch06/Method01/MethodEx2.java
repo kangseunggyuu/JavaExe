@@ -46,6 +46,9 @@ public class MethodEx2 {
 		
 		calcArith(num0, num1, op);
 		
+		// System.out.println("결과값은 " + result + "입니다.");
+		// main메소드에서는 result 값을 선언하지 않아서 calcArith메서드에서 받아야한다.
+		
 		sc.close();
 	}
 }
