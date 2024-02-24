@@ -20,9 +20,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import baseballGame.BaseballGame;
 import memoryGame.MemoryGame;
-import omokGame.OmokClient;
 
 public class GameClientGUI extends JFrame {
 	// 폰트 파일 경로
@@ -259,26 +257,6 @@ public class GameClientGUI extends JFrame {
 //				sendSelectgame(GameName);
 				MemoryGame memoryGame = new MemoryGame();
 //				MemoryGame.main(null);
-			}
-		});
-
-		// 오목게임 선택!
-		selectOmokBtn.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				GameName = "omok";
-				sendSelectgame(GameName);
-				OmokClient omokClient = new OmokClient(socket);
-			}
-		});
-
-		// 숫자 야구 게임 선택!
-		selectBaseballBtn.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				GameName = "baseball";
-				sendSelectgame(GameName);
-				BaseballGame baseball = new BaseballGame(socket);
 			}
 		});
 	}
