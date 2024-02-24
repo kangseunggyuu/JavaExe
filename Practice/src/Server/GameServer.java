@@ -11,10 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import baseballGame.BaseballServer;
-import exgame.exgameserver;
 import memoryGame.MemoryServer;
-import omokGame.OmokServer;
 
 public class GameServer {
 	private Map<String, List<Socket>> gameClients; // 클라이언트들의 소켓을 저장하는 리스트
@@ -28,9 +25,6 @@ public class GameServer {
 		clientIds = new HashMap<>();
 		games = new HashMap<String, Game>();
 		games.put("memory", new MemoryServer());
-		games.put("omok", new OmokServer());
-		games.put("ex", new exgameserver());
-		games.put("baseball", new BaseballServer());
 
 	}
 
